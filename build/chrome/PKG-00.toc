@@ -1,0 +1,79 @@
+('C:\\Users\\INTERNATIONAL '
+ 'PLUS\\Desktop\\VisualStudioProjects\\build\\chrome\\chrome.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\Desktop\\VisualStudioProjects\\build\\chrome\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\Desktop\\VisualStudioProjects\\build\\chrome\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\Desktop\\VisualStudioProjects\\build\\chrome\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\Desktop\\VisualStudioProjects\\build\\chrome\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\Desktop\\VisualStudioProjects\\build\\chrome\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\Desktop\\VisualStudioProjects\\build\\chrome\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('pyi_rth_traitlets',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthooks\\pyi_rth_traitlets.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   'C:\\Users\\INTERNATIONAL '
+   'PLUS\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('chrome',
+   'C:\\Users\\INTERNATIONAL PLUS\\Desktop\\VisualStudioProjects\\chrome.py',
+   'PYSOURCE')],
+ 'python312.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
