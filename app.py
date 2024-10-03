@@ -9,11 +9,12 @@ app = Flask(__name__)
 def detect_country_without_country_code(phone_number):
     possible_countries = []
     for region_code in [
-        "AD", "AL", "AT", "AZ", "BA", "BE", "BG", "BH", "CA", "CH", "CZ", "DE", "DK",
-        "EE", "ES", "FI", "FO", "FR", "GB", "GG", "GI", "GR", "HR", "HU", "IE", "IM",
-        "IS", "IT", "JE", "KW", "LI", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MK",
-        "NL", "NO", "OM", "PL", "PT", "QA", "RO", "RS", "RU", "SE", "SI", "SJ", "SK",
-        "SM", "US", "XK"
+        "AD", "AL", "AR", "AT", "AU", "AZ", "BA", "BE", "BG", "BH", "BY", "CA", "CH",
+        "CO", "CY", "CZ", "DE", "DK", "DZ", "EE", "EG", "ES", "FI", "FO", "FR", "GB",
+        "GG", "GI", "GR", "HR", "HU", "IE", "IM", "IQ", "IS", "IT", "JE", "KW", "LI",
+        "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MK", "MT", "NL", "NO", "NZ", "OM",
+        "PE", "PL", "PT", "QA", "RO", "RS", "RU", "SA", "SE", "SI", "SJ", "SK", "SM",
+        "TR", "UA", "US", "XK"
 
     ]:
         try:
