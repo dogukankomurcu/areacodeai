@@ -76,6 +76,32 @@
             text-align: center;
             color: #666;
         }
+
+        .country-btn {
+            background-color: #ddd;
+            color: #333;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: auto;
+            margin: 10px auto;
+            text-align: center;
+            display: block;
+        }
+
+        .country-btn:hover {
+            background-color: #ccc;
+        }
+
+        .country-list {
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+            color: #555;
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 
@@ -86,7 +112,26 @@
         <input type="text" id="phone_number" name="phone_number" required>
         <button type="submit">Kontrol Et</button>
         <p>Telefon numaranızı girin ve kontrol edin.</p>
+        <button type="button" class="country-btn" onclick="showCountryCodes()">Country Code Dahil Olan Ülkeler</button>
+        <div id="countryList" class="country-list">AD, AL, AR, AT, AU, AZ, BA, BE, BG, BH, BY, CA, CH,
+            CO, CY, CZ, DE, DK, DZ, EE, EG, ES, FI, FO, FR, GB,
+            GG, GI, GR, HR, HU, IE, IM, IQ, IS, IT, JE, KW, LI,
+            LT, LU, LV, MA, MC, MD, ME, MK, MT, NL, NO, NZ, OM,
+            PE, PL, PT, QA, RO, RS, RU, SA, SE, SI, SJ, SK, SM,
+            TR, UA, US, XK
+            </div>
     </form>
+
+    <script>
+        function showCountryCodes() {
+            var countryList = document.getElementById('countryList');
+            if (countryList.style.display === 'none' || countryList.style.display === '') {
+                countryList.style.display = 'block';
+            } else {
+                countryList.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>
