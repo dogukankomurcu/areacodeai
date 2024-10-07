@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telefon Numarası Kontrolü</title>
+    <title>AREA</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <style>
@@ -116,6 +116,10 @@
             margin-top: 15px;
             color: #fff;
             font-size: 1.2rem;
+            max-height: 300px; /* Yüksekliği sınırlamak için */
+            overflow-y: auto; /* Dikey kaydırma çubuğu eklemek için */
+            border: 1px solid #ffd700; /* İsteğe bağlı: sınır ekleyebilirsin */
+            border-radius: 8px;
         }
 
         .country-list span {
@@ -165,13 +169,17 @@
     <script>
         function showCountryCodes() {
             var countryList = document.getElementById('countryList');
+            var heading = document.querySelector('h1');  // Hedef başlık
+    
             if (countryList.style.display === 'none' || countryList.style.display === '') {
                 countryList.style.display = 'block';
+                heading.scrollIntoView({ behavior: 'smooth' }); // Başlığa yumuşak kaydırma
             } else {
                 countryList.style.display = 'none';
             }
         }
     </script>
+    
 </body>
 
 </html>

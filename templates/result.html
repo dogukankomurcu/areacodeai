@@ -7,9 +7,9 @@
     <title>Sonuç</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1d1f27;
+            color: #f0f0f0;
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,25 +19,27 @@
         }
 
         h1 {
-            color: #4CAF50;
-            font-size: 2.5rem;
+            color: #FFA726;
+            font-size: 2.8rem;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-weight: 600;
         }
 
         .result-container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            background-color: #292b35;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
             max-width: 600px;
             width: 100%;
+            text-align: center;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 20px;
-            color: #555;
+            color: #d1d1d1;
         }
 
         ul {
@@ -46,35 +48,47 @@
         }
 
         ul li {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
+            background-color: #2f323d;
+            border: 1px solid #434750;
+            padding: 15px;
+            margin-bottom: 12px;
             border-radius: 8px;
-            color: #333;
+            color: #f0f0f0;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+
+        ul li:hover {
+            transform: translateY(-3px);
+            background-color: #3b3f4a;
         }
 
         a {
             display: inline-block;
             text-decoration: none;
-            background-color: #4CAF50;
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
             color: white;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            margin-top: 25px;
+            transition: background 0.3s ease;
+            font-weight: 500;
         }
 
         a:hover {
-            background-color: #45a049;
+            background: linear-gradient(135deg, #ff8e53, #ff6b6b);
         }
 
         h2 {
-            color: #333;
+            color: #f9a825;
             font-size: 1.8rem;
             margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        strong {
+            color: #ffca28;
         }
     </style>
 </head>
