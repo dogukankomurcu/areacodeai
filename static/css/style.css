@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f38;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align at the top */
+    min-height: 100vh; /* Minimum height */
+}
+
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+form {
+    background-color: #2b2b45;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    color: #eaeaea;
+    margin-bottom: 12px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    background-color: #343456;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #434372;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff6b6b, #ff8c66);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff5a5a, #ff7859);
+    transform: translateY(-3px);
+}
+
+p {
+    text-align: center;
+    color: #ccccdd;
+}
+
+.country-btn {
+    background-color: #343456;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+.country-btn:hover {
+    background-color: #454572;
+}
+
+.country-list {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    max-height: none; /* Otomatik uzunluk */
+    overflow-y: hidden; /* Kaydırma çubuğunu kaldır */
+    border: 1px solid #ffd700; /* İsteğe bağlı: sınır ekleyebilirsin */
+    border-radius: 8px;
+}
+
+.country-list span {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #434372;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+    line-height: 60px; /* Yatay ve dikey ortalama */
+    text-align: center;
+}
+
+.country-list span:hover {
+    background-color: #ff6b6b;
+}
+
+.country-list {
+    max-width: 640px; /* 8 öğe * (60px genişlik + 10px toplam margin) */
+}
