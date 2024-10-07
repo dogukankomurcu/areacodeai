@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telefon Numarası Kontrolü</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <style>
+        /* Global Styles */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1f1f38;
+            color: #ffffff;
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,88 +22,120 @@
         }
 
         h1 {
-            color: #4CAF50;
-            font-size: 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;
             text-align: center;
-            margin-bottom: 45px;
+            color: #ffd700;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
         }
 
         form {
-            background-color: #fff;
-            padding: 100px;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            background-color: #2b2b45;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
             max-width: 400px;
             width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
         }
 
         label {
             display: block;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-            color: #555;
+            font-size: 1.2rem;
+            color: #eaeaea;
+            margin-bottom: 12px;
         }
 
         input[type="text"] {
             width: 100%;
-            padding: 12px;
-            font-size: 1rem;
-            border: 2px solid #ddd;
+            padding: 14px;
+            font-size: 1.1rem;
+            background-color: #343456;
+            color: #ffffff;
+            border: none;
             border-radius: 8px;
             margin-bottom: 20px;
-            transition: border-color 0.3s ease;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         input[type="text"]:focus {
-            border-color: #4CAF50;
+            background-color: #434372;
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6);
             outline: none;
         }
 
         button {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 12px 20px;
-            font-size: 1rem;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
             width: 100%;
-            transition: background-color 0.3s ease;
+            padding: 14px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #ff6b6b, #ff8c66);
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
         }
 
         button:hover {
-            background-color: #45a049;
+            background: linear-gradient(135deg, #ff5a5a, #ff7859);
+            transform: translateY(-3px);
         }
 
         p {
             text-align: center;
-            color: #666;
+            color: #ccccdd;
         }
 
         .country-btn {
-            background-color: #ddd;
-            color: #333;
-            padding: 10px 15px;
-            font-size: 1rem;
+            background-color: #343456;
+            color: #fff;
+            padding: 12px;
+            font-size: 1.1rem;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
-            width: auto;
-            margin: 10px auto;
-            text-align: center;
-            display: block;
+            width: 100%;
+            margin: 15px 0;
+            transition: background-color 0.3s ease;
         }
 
         .country-btn:hover {
-            background-color: #ccc;
+            background-color: #454572;
         }
 
         .country-list {
             display: none;
             text-align: center;
-            margin-top: 10px;
-            color: #555;
+            margin-top: 15px;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .country-list span {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background-color: #434372;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
             font-size: 1.1rem;
+            line-height: 60px; /* Yatay ve dikey ortalama */
+            text-align: center;
+        }
+
+        .country-list span:hover {
+            background-color: #ff6b6b;
+        }
+        .country-list {
+            max-width: 640px; /* 8 öğe * (60px genişlik + 10px toplam margin) */
         }
     </style>
 </head>
@@ -113,13 +148,18 @@
         <button type="submit">Kontrol Et</button>
         <p>Telefon numaranızı girin ve kontrol edin.</p>
         <button type="button" class="country-btn" onclick="showCountryCodes()">Country Code Dahil Olan Ülkeler</button>
-        <div id="countryList" class="country-list">AD, AL, AR, AT, AU, AZ, BA, BE, BG, BH, BY, CA, CH,
-            CO, CY, CZ, DE, DK, DZ, EE, EG, ES, FI, FO, FR, GB,
-            GG, GI, GR, HR, HU, IE, IM, IQ, IS, IT, JE, KW, LI,
-            LT, LU, LV, MA, MC, MD, ME, MK, MT, NL, NO, NZ, OM,
-            PE, PL, PT, QA, RO, RS, RU, SA, SE, SI, SJ, SK, SM,
-            TR, UA, US, XK
-            </div>
+        <div id="countryList" class="country-list">
+            <span>AD</span><span>AL</span><span>AR</span><span>AT</span><span>AU</span><span>AZ</span><span>BA</span><span>BE</span>
+            <span>BG</span><span>BH</span><span>BY</span><span>CA</span><span>CH</span><span>CO</span><span>CY</span><span>CZ</span>
+            <span>DE</span><span>DK</span><span>DZ</span><span>EE</span><span>EG</span><span>ES</span><span>FI</span><span>FO</span>
+            <span>FR</span><span>GB</span><span>GG</span><span>GI</span><span>GR</span><span>HR</span><span>HU</span><span>IE</span>
+            <span>IM</span><span>IQ</span><span>IS</span><span>IT</span><span>JE</span><span>KW</span><span>LI</span><span>LT</span>
+            <span>LU</span><span>LV</span><span>MA</span><span>MC</span><span>MD</span><span>ME</span><span>MK</span><span>MT</span>
+            <span>NL</span><span>NO</span><span>NZ</span><span>OM</span><span>PE</span><span>PL</span><span>PT</span><span>QA</span>
+            <span>RO</span><span>RS</span><span>RU</span><span>SA</span><span>SE</span><span>SI</span><span>SJ</span><span>SK</span>
+            <span>SM</span><span>TR</span><span>UA</span><span>US</span><span>XK</span>
+        </div>
+        
     </form>
 
     <script>
