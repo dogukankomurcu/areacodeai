@@ -27,6 +27,7 @@ form {
     max-width: 400px;
     width: 100%;
     transition: all 0.3s ease;
+    margin-top: 110px;
 }
 
 form:hover {
@@ -42,7 +43,8 @@ label {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 375px;
+    height: 20px;
     padding: 14px;
     font-size: 1.1rem;
     background-color: #343456;
@@ -131,3 +133,28 @@ p {
 .country-list {
     max-width: 640px; /* 8 öğe * (60px genişlik + 10px toplam margin) */
 }
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #ffd700;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2b2b45;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+}
+
+.back-button:hover {
+    background-color: #434372;
+    transform: translateX(-5px);
+}
+
+.back-button::before {
+    margin-right: 10px; /* Ok ile yazı arasındaki boşluğu arttır */
+    font-size: 1.5rem; /* Ok işaretinin boyutu */
+}
+
