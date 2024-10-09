@@ -158,3 +158,39 @@ p {
     font-size: 1.5rem; /* Ok işaretinin boyutu */
 }
 
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Başlık yazı boyutu küçültüldü */
+    }
+
+    form {
+        padding: 40px 20px; /* Formun iç boşluğu azaltıldı */
+        margin-top: 50px; /* Üstten boşluk azaltıldı */
+    }
+
+    input[type="text"] {
+        width: 100%; /* Input genişliği tam ekran olacak şekilde ayarlandı */
+    }
+
+    button {
+        font-size: 1rem; /* Buton yazı boyutu küçültüldü */
+        padding: 10px; /* Buton paddingi azaltıldı */
+    }
+
+    .country-btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .back-button {
+        font-size: 1.2rem; /* Geri butonunun boyutu küçültüldü */
+    }
+
+    .country-list span {
+        width: 45px; /* Ülke kutucukları küçültüldü */
+        height: 45px;
+        font-size: 1rem;
+        line-height: 45px;
+    }
+}
