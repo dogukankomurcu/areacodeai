@@ -165,8 +165,8 @@ p {
     }
 
     form {
-        padding: 40px 20px; /* Formun iç boşluğu azaltıldı */
-        margin-top: 50px; /* Üstten boşluk azaltıldı */
+        padding: 35px 15px; /* Formun iç boşluğu azaltıldı */
+        margin-top: 110px; /* Üstten boşluk azaltıldı */
     }
 
     input[type="text"] {
@@ -175,12 +175,12 @@ p {
 
     button {
         font-size: 1rem; /* Buton yazı boyutu küçültüldü */
-        padding: 10px; /* Buton paddingi azaltıldı */
+        padding: 7px; /* Buton paddingi azaltıldı */
     }
 
     .country-btn {
         font-size: 1rem;
-        padding: 10px;
+        padding: 7px;
     }
 
     .back-button {
