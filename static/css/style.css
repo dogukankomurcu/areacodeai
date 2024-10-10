@@ -138,7 +138,7 @@ p {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #ffd700;
     text-decoration: none;
     padding: 10px;
@@ -161,30 +161,36 @@ p {
 /* Responsive design adjustments */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 1.8rem; /* Başlık yazı boyutu küçültüldü */
+        font-size: 1.7rem; /* Başlık yazı boyutu küçültüldü */
     }
 
     form {
-        padding: 35px 15px; /* Formun iç boşluğu azaltıldı */
+        padding: 65px 15px; /* Formun iç boşluğu azaltıldı */
         margin-top: 110px; /* Üstten boşluk azaltıldı */
+        text-align: center;
     }
 
     input[type="text"] {
-        width: 100%; /* Input genişliği tam ekran olacak şekilde ayarlandı */
+        width: 375px;
+        height: 10px;
     }
 
     button {
         font-size: 1rem; /* Buton yazı boyutu küçültüldü */
-        padding: 7px; /* Buton paddingi azaltıldı */
+        padding: 5 10px; /* Buton paddingi azaltıldı */
+        width: 200px;
     }
 
     .country-btn {
         font-size: 1rem;
-        padding: 7px;
+        padding: 10 15px;
+        width: 300px;
+        text-align: center;
+        display: inline-block;   
     }
 
     .back-button {
-        font-size: 1.2rem; /* Geri butonunun boyutu küçültüldü */
+        font-size: 1.1rem; /* Geri butonunun boyutu küçültüldü */
     }
 
     .country-list span {
