@@ -1,7 +1,7 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #1d1f27;
-    color: #f0f0f0;
+    font-family: 'Courier New', monospace;
+    background-color: #181a1f; /* Daha koyu arka plan */
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,18 +11,18 @@ body {
 }
 
 h1 {
-    color: #FFA726;
-    font-size: 2.8rem;
+    color: #66c0c9; /* Canlı ama pastel tonlarda */
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
     font-weight: 600;
 }
 
 .result-container {
-    background-color: #292b35;
+    background-color: #20232a;
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     max-width: 600px;
     width: 100%;
     text-align: center;
@@ -31,9 +31,9 @@ h1 {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #d1d1d1;
+    color: #b0b0b0;
 }
 
 ul {
@@ -43,26 +43,26 @@ ul {
 }
 
 ul li {
-    background-color: #2f323d;
-    border: 1px solid #434750;
+    background-color: #2b2e35;
+    border: 1px solid #3b3e47;
     padding: 15px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     border-radius: 8px;
     color: #f0f0f0;
-    font-size: 1.2rem;
-    transition: transform 0.2s ease;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 ul li:hover {
     transform: translateY(-3px);
-    background-color: #3b3f4a;
+    background-color: #373b44;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
-    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
-    color: white;
+    background: linear-gradient(135deg, #4f94d4, #7dbbe6);
+    color: #ffffff;
     padding: 12px 30px;
     font-size: 1.1rem;
     border-radius: 50px;
@@ -72,18 +72,18 @@ a {
 }
 
 a:hover {
-    background: linear-gradient(135deg, #ff8e53, #ff6b6b);
+    background: linear-gradient(135deg, #3b82d1, #6bace5);
 }
 
 h2 {
-    color: #f9a825;
-    font-size: 1.8rem;
+    color: #66c0c9;
+    font-size: 1.7rem;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
 strong {
-    color: #ffca28;
+    color: #ffb74d;
 }
 
 /* Responsive design adjustments */
