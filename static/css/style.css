@@ -28,6 +28,10 @@ form {
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 form:hover {
@@ -131,23 +135,35 @@ p {
 }
 
 .back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 1.1rem;
-    color: #76c7c0;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 4px;
-    background-color: #1e1e1e;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-right: 10px;
+position: absolute;
+top: 20px;
+left: 20px;
+font-size: 1.1rem;
+color: #76c7c0;
+text-decoration: none;
+padding: 8px;
+border-radius: 4px;
+background-color: #1e1e1e;
+transition: background-color 0.3s ease, transform 0.3s ease;
+margin-right: 10px;
 }
 
 .back-button:hover {
-    background-color: #333333;
-    transform: translateX(-5px);
+background-color: #333333;
+transform: translateX(-5px);
 }
+
+.find-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px; /* Form elemanlarından biraz boşluk bırak */
+}
+
+
 
 /* Responsive design adjustments */
 @media screen and (max-width: 768px) {
@@ -187,4 +203,5 @@ p {
         font-size: 0.9rem;
         line-height: 40px;
     }
+
 }
