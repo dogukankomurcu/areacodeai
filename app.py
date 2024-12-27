@@ -20,12 +20,10 @@ def detect_country_without_country_code(phone_number):
             parsed_number = phonenumbers.parse(phone_number, region_code)
             if phonenumbers.is_valid_number(parsed_number):
                 country_name = geocoder.description_for_number(parsed_number, "en")
-                possible_countries.append({
-                    "country_name": country_name,
-                    "formatted_number": phonenumbers.format_number(parsed_number, phonenumbers.PhoneNumberFormat.E164)
-                })
+                possible_countries.append((country_name, phonenumbers.format_number(parsed_number, phonenumbers.PhoneNumberFormat.E164)))
         except phonenumbers.phonenumberutil.NumberParseException:
             continue
+                
 
     return possible_countries if possible_countries else None
 
