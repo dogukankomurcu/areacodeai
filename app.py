@@ -29,17 +29,8 @@ def detect_country_without_country_code(phone_number):
 
     return possible_countries if possible_countries else None
 
-# Anasayfa rotası
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    if request.method == 'POST':
-        phone_number = request.form['phone_number']
-        possible_countries = detect_country_without_country_code(phone_number)
-        return render_template('result.html', phone_number=phone_number, possible_countries=possible_countries)
-    return render_template('index.html')
-
 # Telefon numarasını URL parametresinden alıp işleyen rota
-@app.route('/check', methods=['GET'])
+@app.route('/area-code/check', methods=['GET'])
 def check_phone():
     phone_number = request.args.get('phone')
     if not phone_number:
