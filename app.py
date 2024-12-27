@@ -29,7 +29,16 @@ def detect_country_without_country_code(phone_number):
 
     return possible_countries if possible_countries else None
 
-# Telefon numarasını URL parametresinden alıp işleyen rota
+# Anasayfa rotası (HTML arayüz)
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        phone_number = request.form['phone_number']
+        possible_countries = detect_country_without_country_code(phone_number)
+        return render_template('result.html', phone_number=phone_number, possible_countries=possible_countries)
+    return render_template('index.html')
+
+# API rotası (JSON döndüren)
 @app.route('/area-code/check', methods=['GET'])
 def check_phone():
     phone_number = request.args.get('phone')
@@ -47,3 +56,5 @@ def check_phone():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug=False)
+
+#https://areacode-13fef53b1282.herokuapp.com/area-code/check?phone=+75642321112
