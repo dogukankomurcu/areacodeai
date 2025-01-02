@@ -7,6 +7,9 @@ app = Flask(__name__)
 
 # Telefon numarasını işleyen fonksiyon
 def detect_country_without_country_code(phone_number):
+    # '+' karakterini kaldır
+    phone_number = phone_number.lstrip('+')
+    
     possible_countries = []
     for region_code in [
         "AD", "AL", "AR", "AT", "AU", "AZ", "BA", "BE", "BG", "BH", "BY", "CA", "CH",
@@ -23,8 +26,7 @@ def detect_country_without_country_code(phone_number):
                 possible_countries.append((country_name, phonenumbers.format_number(parsed_number, phonenumbers.PhoneNumberFormat.E164)))
         except phonenumbers.phonenumberutil.NumberParseException:
             continue
-                
-
+    
     return possible_countries if possible_countries else None
 
 # Anasayfa rotası (HTML arayüz)
@@ -54,5 +56,3 @@ def check_phone():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug=False)
-
-#https://areacode-13fef53b1282.herokuapp.com/area-code/check?phone=+75642321112
