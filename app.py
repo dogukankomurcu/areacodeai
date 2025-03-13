@@ -38,6 +38,11 @@ def index():
         return render_template('result.html', phone_number=phone_number, possible_countries=possible_countries)
     return render_template('index.html')
 
+@app.route('/ai')
+def ai():
+    return render_template('ai.html')  # templates klasöründeki ai.html dosyasını yükler
+
+
 # API rotası (JSON döndüren)
 @app.route('/area-code/check', methods=['GET'])
 def check_phone():
