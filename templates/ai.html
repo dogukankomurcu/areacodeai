@@ -89,6 +89,19 @@
             font-size: 16px;
             margin-top: 10px;
         }
+        .button-left {
+            background: none;
+            border: none;
+            color: #5bc0de; /* Mavi tonlarında bir renk */
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .button-left:hover {
+            color: #007bff; /* Üzerine gelindiğinde koyu mavi */
+        }
+
+        
 
         button:hover {
             background: #3369c8;
@@ -125,7 +138,7 @@
 </head>
 <body>
     <div class="container">
-        <a href="https://thelodose.com/area-code/" class="button-left">&larr; The Lodose</a>
+        <button class="button-left" onclick="window.history.back();">&larr; The Lodose</button>
         <br>
         <h2>The Lodose AI</h2>
         <div class="form-group">
